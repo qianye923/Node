@@ -25,7 +25,7 @@
         from: '"Fred Foo 👻" <1006196296@qq.com>', // sender address
         to: '1006196296@qq.com', // list of receivers
         subject: 'Hello ✔', // Subject line
-        html: '<b>嘿嘿 。。。。。。</b>' // html body
+        html: '<b>嘿嘿 。。。。。。</b>' // html body  
     });
 
 

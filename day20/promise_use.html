@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      
+        <!-- https://www.jianshu.com/p/1b63a13c2701 坂考地址 -->
+
+     <script>
+     
+       var promise=new Promise(function(resolve,reject){
+         console.log(resolve)
+         console.log(reject)
+           resolve({
+               name:"chfli"
+           })
+           reject({
+               err:'err'
+           })
+       })
+       promise.then(function(res){
+            console.log(res)
+       })
+     </script>
+</body>
+</html>

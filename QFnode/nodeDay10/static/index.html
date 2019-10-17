@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-CN">
+	<meta charset="GBK">
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="Copyright" content="Tencent" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="msapplication-tap-highlight" content="no">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://game.gtimg.cn/images/user/cp/a20190829tiplogin/pc/tipdialog-pc.css">
+	<!-- <link rel="stylesheet" href="https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/index.css"> -->
+	<link rel="stylesheet" href="./index.css">
+	<title>直播打榜</title>
+</head>
+
+<body>
+	<!-- white-page 白色的页面 -->
+	<div class="page-pop white-page">
+		<a href="javascript:void(0)" class="close"></a>
+		<!-- 主播总榜  投票粉丝-->
+		<div class="pop-box">
+			<div class="nav-bar">
+				<div class="nav-change">
+					<a class="active" href="#">主播总榜</a>
+					<a href="#">投票粉丝</a>
+				</div>
+
+				<a href="#" class="logo"> </a>
+				<div class="nav-r-info">剩余：<span class="numb">3</span>票
+					<ul>
+						<li><a href="#">明细</a>|</li>
+						<li><a href="#">赚票</a>|</li>
+						<li class="act-rules">
+							<a href="#">活动规则</a>
+							<div class="rules" style="display:;">
+								<ul>
+									<li class="rules-t1">活动说明：</li>
+									<li>1、活动时间：2019年10月12日00：00：00-10月22日21：59：59；</li>
+									<li>2、活动期间，玩家可通过完成打榜活动中的页面签到和王者荣耀游戏任务获得对应投票票数，为喜爱的主播打榜。当天任务获得票数，请当天领取哦，过期票数清零不能领取；
+									</li>
+									<li>3、活动结束后，将根据主播排行榜选出投票数最高的2名主播将受邀与户外女神【罗玉姬子】及二次元女神【轩子】联合带队，自选4位虎牙自走棋类游戏的大神主播做队友，在23日展开明星双排赛；
+									</li>
+									<li>4、活动结束后，主播排行榜票数最高的前50名主播，将获得王者人生提供的王者荣耀周边、大量企鹅币奖励，由主播为打榜的粉丝送出；主播排名越前，奖励越丰厚。</li>
+									<li  class="rules-t1 top-t">活动奖励：</li>
+									<li>参与大咖打榜，即有机会瓜分<span class="rules-heightlign">10万</span>Q币+<span  class="rules-heightlign">5.5万</span>元海量周边奖励！</li>
+									<li class="weight">本次打榜活动奖励由【王者人生】独家提供</li>
+									 <li>
+										 <img src="https://image-1251917893.cos.ap-guangzhou.myqcloud.com/2019/a20190719HuyaLivePC/jl-1.png" alt="">
+										 <img src="https://image-1251917893.cos.ap-guangzhou.myqcloud.com/2019/a20190719HuyaLivePC/jl-2.png" alt="">
+										 <img src="https://image-1251917893.cos.ap-guangzhou.myqcloud.com/2019/a20190719HuyaLivePC/jl-3.png" alt="">
+									 </li>
+									<li>
+										<p><span  class="rules-heightlign">21-30名</span>  王者荣耀萌新伙伴赵云妲己挂件（新版）*5/1000QB*1</p>
+										<p><span  class="rules-heightlign">31-40名</span>  王者荣耀脸探草系列咖啡杯（刘备款）*5/1000QB*1</p>
+										<p><span  class="rules-heightlign">41-50名</span>  王者荣耀凤求凰王昭君国风笔记本*5/1000QB*1z</p>
+									<li>
+									<li  class="rules-t1 top-t">活动规则：</li>
+									<li>1、活动参与条件：虎牙直播平台用户须登录虎牙账号后，在活动页面绑定王者荣耀游戏账号，否则无法参与活动；每账号仅能绑定一次，且不可解绑、更换账号；</li>
+									<li>2、任务规则：打榜活动任务每日0点刷新，用户须在每日刷新时间前领取当天获得票数，否则当天未领取票数将自动刷新归零，不做保留；</li>
+									<li>3、已领取的票数将实时累计进入用户账户，可在活动期间投票给任一想投票的主播，投票后将实时从用户账户扣除票数；</li>
+									<li>4、票数仅在此活动期间内有效，活动结束将全部清零。</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<!-- 主播总榜 -->
+				<div class="content-zb" id="content-zb" style="display:;">
+					<div class="section-1">
+						<a class="search-icon" href="#"></a>
+						<input type="text" placeholder="搜索主播名称或直播间ID">
+						<div class="search-box" style="display:none;">
+							<!-- 没有查询到结果 -->
+							<p class="no-infor" style="display: none;">没有查询到结果</p>
+							<ul style="display:">
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光守护者-凯撒大帝</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光守护者-凯撒大帝</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光守护者-凯撒大帝</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+								<li class="rank-box">
+									<p class="rank-num">1</p>
+									<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+										alt="默认头像">
+									<p class="rank-score">
+										<span class="name">曙光</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+									<a class="tb-btn" href="#">投票</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<!--  当数据<=10条 添加 few 这个类;   大于100 添加more这个类  -->
+					<div class="list  few">
+						<div class="list-box-l">
+							<p class="title">第1-50名</p>
+							<div class="slide-box">
+								<ul>
+									<li class="rank-box flag-1">
+										<p class="rank-num">1</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn disable" href="#">投票</a>
+									</li>
+									<li class="rank-box flag-2">
+										<p class="rank-num ">2</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box flag-3">
+										<p class="rank-num">3</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">4</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn disable" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-box-r" style="display:;">
+							<p class="title">第50-100名</p>
+							<div class="slide-box">
+								<ul>
+									<li class="rank-box flag-1">
+										<p class="rank-num">1</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box flag-2">
+										<p class="rank-num ">2</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box flag-3">
+										<p class="rank-num">3</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">4</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">7</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+										<a class="tb-btn" href="#">投票</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="page" class="page_div"></div>
+					</div>
+				</div>
+				<!-- 投票粉丝 -->
+				<div class="content-fs" style="display:none;">
+					<div class="section-1">
+						<p class="rank-score">
+							<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png" alt="默认头像">
+							<span>这个主播很是厉害呢</span>
+						</p>
+						<p>
+							<span class="total-data">666.88万票&nbsp;&nbsp;|<i>总榜第10名</i></span>
+							<!-- disable 不可点击态 -->
+							<a class="tb-btn " href="#">投票</a>
+						</p>
+
+						<!-- </li> -->
+
+					</div>
+
+					<div class="list ">
+						<div class="list-box-l">
+							<p class="title">粉丝贡献榜</p>
+							<div class="slide-box">
+								<div class="current">
+									<p class="rank-num ">1</p>
+									<p class="rank-score">
+										<span class="name">曙光守护者-凯撒大帝</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+								</div>
+								<ul>
+									<li class="rank-box flag-1">
+										<p class="rank-num ">1</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box flag-2">
+										<p class="rank-num ">2</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+									</li>
+									<li class="rank-box flag-3">
+										<p class="rank-num">3</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">4</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">7</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">8</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">9</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-box-r" style="display:;">
+							<p class="title">粉丝段位榜</p>
+							<div class="slide-box">
+								<div class="current">
+									<p class="rank-num ">1</p>
+									<p class="rank-score">
+										<span class="name">曙光守护者-凯撒大帝</span>
+										<span class="voting-number"><i>123.30</i>万票</span>
+									</p>
+								</div>
+								<ul>
+									<li class="rank-box flag-1">
+										<p class="rank-num ">1</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box flag-2">
+										<p class="rank-num ">2</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+									</li>
+									<li class="rank-box flag-3">
+										<p class="rank-num">3</p>
+										<img src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png"
+											alt="默认头像">
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">4</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">5</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">7</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">6</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">7</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">8</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+									<li class="rank-box">
+										<p class="rank-num">9</p>
+
+										<p class="rank-score">
+											<span class="name">曙光守护者-凯撒大帝</span>
+											<span class="voting-number"><i>123.30</i>万票</span>
+										</p>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer">腾讯公司保留在法律与许范围内对活动规则进行补充解释的权利</p>
+		</div>
+	</div>
+
+
+	<!-- white-page 白色的页面 弹框 -->
+	<div class="pop " style="display:none">
+		<p class="no-ticket">没有票啦，快去赚票吧！</p>
+		<div class="button-box">
+			<a class="cancle" href="#">取消</a>
+			<a class="true" href="#">去赚票</a>
+		</div>
+	</div>
+
+
+	<!-- white-page 白色的页面 弹框 -->
+	<div class="pop pop-2  white-page" style="display:none">
+		<img class="img-head" src="http://game.gtimg.cn/images/user/cp/a20180726tvguess/img-default.png" alt="">
+		<p class="top-alt">这个主播很是厉害呢</p>
+		<div class="aj-number">
+			<!--数字为1的是候减少不可点击态 disable -->
+			<a class="js disable" href="#"> </a>
+			<input type="text" placeholder="1">
+			<a class="add " href="#"></a>
+		</div>
+		<p class="more-ticket">剩余3票，<a href="#">投出全部</a></p>
+		<div class="button-box">
+			<a class="cancle" href="#">取消</a>
+			<a class="true" href="#">为Ta投票</a>
+		</div>
+	</div>
+
+	<!-- 投票成功 -->
+	<div class="cover" style="display:none;"></div>
+	<div class="success" style="display: none;">
+		<div class="scroll"></div>
+		<div class="stars">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<div class="tp">
+			<img class="hand" src="https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/fist.png" alt="">
+			<img class="dz" src="https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/base-icon.png" alt="">
+		</div>
+	</div>
+
+
+	<script src="https://ossweb-img.qq.com/images/js/jquery/jquery-1.12.2.min.js"></script>
+	<script src="https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/js/pageMe.js"></script>
+	<script>
+		$(".act-rules").hover(function () {
+			$(".rules").css("display", "block")
+		}, function () {
+			$(".rules").css("display", "none")
+		})
+
+
+		$("#page").paging({
+			pageNum: 4, // 当前页面
+			totalNum: 7, // 总页数
+			totalList: 300, // 记录总数
+			callback: function (num) { //回调函数
+				console.log(num);
+			}
+		});
+	</script>
+</body>
+
+</html>

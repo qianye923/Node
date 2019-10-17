@@ -1,0 +1,176 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+a{-webkit-user-select:none;-webkit-user-drag:none;-webkit-tap-highlight-color:transparent;text-decoration:none}
+html,body,.content,.main-wrap,.right-bar{height:100%;overflow:hidden}
+body{width:100%;font-family:"Microsoft YaHei","\5FAE\8F6F\96C5\9ED1","\9ED1\4F53",Arial,Tahoma,"??????";overflow-x:hidden;background-size:cover}
+i,em{font-style:normal}ul,li{list-style:none}img{max-width:100%}
+*{box-sizing:border-box;-webkit-box-sizing:border-box}
+.page-pop{position:fixed;top:0;right:0;bottom:0;left:0;margin:auto;width:988px;height:618px;padding:144px 145px 10px 145px;box-sizing:border-box;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/page-bg2.png) top center no-repeat;background-size:100% 100%}
+.close{position:absolute;right:85px;top:35px;width:37px;height:37px;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/page-closeBtn.png) center center no-repeat;background-size:100% 100%;display:none}
+.nav-bar{margin:0rem auto 6px;position:relative;font-size:12px}
+.nav-change{width:236px;height:37px;margin:0rem auto;background:#201a36;border-radius:18.5px;padding:2px;font-size:16px;line-height:31px;letter-spacing:0;text-align:center}
+.nav-change a{width:115px;color:#fff;height:100%;float:left}
+.nav-change a:first-child{margin-right:2px}.nav-change a.active{background-image:linear-gradient(90deg,#ffe8b9 0,#e2b65e 100%);font-weight:bold;border-radius:18.5px;color:#3a0c0c}
+.logo{position:absolute;left:0;width:135px;height:27px;bottom:0;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/logo.png) center center no-repeat;background-size:100% 100%}
+.nav-r-info{position:absolute;right:0;left:0;margin:auto;bottom:9px;color:#fff;text-align:right}
+.nav-r-info>ul{display:inline-block}.nav-r-info>ul li{display:inline-block;color:#ffd98e}
+.rules ul li {display:block;}
+.nav-r-info>ul li a{display:inline-block;color:#ffd98e;margin:0 7px;text-decoration:underline}
+.nav-r-info>ul li:last-child a{margin-right:0rem}.nav-r-info .numb{font-size:16px}
+.rules{position:absolute;z-index:20;right:0;top:27px;width:470px;height:300px;background:#2c2545;text-align:left;
+    box-shadow:0 5px 5px 0 rgba(19,13,40,0.2);font-size:12px;padding:0 26px;box-sizing:border-box;color:#95b8f5;
+    border-radius:4px;display:block}
+.rules ul{height:280px;margin-top:10px;overflow-y:scroll}
+.rules ul li.rules-t1{font-size: 16px;margin-bottom: 8px;}
+.rules ul li.top-t{margin-top:20px;}
+.rules ul li img{margin:2px 0px;}
+.rules-heightlign{color: #DEAF42;}
+.weight{font-weight:bold;}
+.rules::after,.rules::before{content:"";position:absolute;top:-10px}
+.rules::before{right:10px;width:0;height:0;border:5px solid;border-color:transparent transparent #fff}
+.rules::after{right:0;width:100px;height:10px}.rules ul li{margin-bottom:4px;color:#333;line-height:18px}
+.rules ul::-webkit-scrollbar{width:4px;border-radius:4px}
+.rules ul::-webkit-scrollbar-track{margin-right:8px}
+.rules ul::-webkit-scrollbar-thumb{background:#deaf42;border-radius:3px}
+.content{height:400px}.footer{font-size:12px;color:#69667c;text-align:center;line-height:20px}
+.section-1{width:698px;background:#201a36;border-radius:4px;margin-bottom:1px;display:flex;padding:10px;box-sizing:border-box;position:relative;background-color:#fff}
+.section-1 .search-box{position:absolute;z-index:20;left:0;right:0;margin:auto;top:40px;background:#2c2545;box-shadow:0 -9px 5px 0 rgba(19,13,40,0.5);height:210px;border-radius:4px;padding:7px 25px;font-size:12px;color:#fff}
+.section-1 .search-box ul{height:190px;overflow-y:scroll}
+.section-1 .no-infor{text-align:center;height:100%;padding-top:80px;box-sizing:border-box}
+.search-box ul::-webkit-scrollbar{width:4px;border-radius:4px}
+.search-box ul::-webkit-scrollbar-track{margin-right:8px}
+.search-box ul::-webkit-scrollbar-thumb{background:#deaf42;border-radius:3px}
+.section-1 .search-box ul li{padding:8px 20px}.section-1 .search-box ul li span{display:inline-block;width:220px}
+.section-1 .search-box ul li:hover{background-color:#655992;color:#deaf42;cursor:pointer}
+.section-1 input{border:0;outline:0;height:20px;font-size:12px;color:#989898;background:0;border-left:1px solid #000;padding-left:8px;flex:1}
+.content-zb{height:100%}.search-icon{display:block;width:15px;height:15px;margin-right:8px;margin-top:3px;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/search-icon.png) top center no-repeat;background-size:100% 100%}
+.search-icon img{width:100%;height:100%}.list{background:#201a36;height:359px;box-shadow:0 0 5px 0 rgba(0,0,0,0.5);border-radius:4px;padding:12px 0 15px;box-sizing:border-box;display:flex;justify-content:center;flex-direction:row;justify-content:space-between}
+.list .list-box-l,.list .list-box-r{flex:1;position:relative}
+.list .list-box-l::after{content:"";width:1px;height:290px;background-color:#0f0927;position:absolute;right:0;bottom:0}
+.list .title{width:216px;height:28px;font-size:12px;margin:0 auto 12px;color:#fff;text-align:center;line-height:28px;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/bq-black.png) top center no-repeat;background-size:100% 100%}
+.list .slide-box{overflow-y:scroll;height:290px;position:relative;width:323px;margin:auto}
+.slide-box ul{display:flex;flex-direction:column}.slide-box::-webkit-scrollbar{width:4px;border-radius:4px}
+.slide-box::-webkit-scrollbar-track{margin-right:8px}
+.slide-box::-webkit-scrollbar-thumb{background:#deaf42;border-radius:3px}
+.rank-box{padding:0 6px 0 6px;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;flex-direction:row;justify-content:center;margin:0 0 12px}
+.rank-box:last-child{margin-bottom:0}.flag-1 .rank-num{background:#ff574e}
+.flag-2 .rank-num{background:#fe8727}.flag-3 .rank-num{background:#ffbe26}
+.rank-num{display:block;font-size:12px;color:#fff;border-radius:3px;margin-right:10px;width:18px;height:18px;text-align:center;line-height:18px}
+.rank-box img{width:32px;height:32px;border:1px solid #d49b38;border-radius:100%;box-sizing:border-box;margin-right:10px}
+.rank-score{flex:1;font-size:12px;color:#fff}.rank-score span{display:block;font-size:12px;color:#fff;line-height:17px}
+.rank-score .voting-number{color:#ffd98e}.tb-btn{display:block;width:72px;height:24px;line-height:24px;font-size:12px;text-align:center;color:#3a0c0c;background-image:linear-gradient(90deg,#ffe8b9 0,#e2b65e 100%);border-radius:15px}
+.tb-btn.disable{filter:grayscale(100%)}
+/* .few .list-box-l{display:none} */
+.few .list-box-r{display:none}
+.few .list-box-l .title{display:none}
+.few .list-box-l .slide-box{width:100%;height:95%}
+.few .list-box-l .slide-box ul{flex-direction:row;flex-wrap:wrap;align-items:flex-start;padding:0 5px;box-sizing:border-box}
+.few .list-box-l .slide-box ul li{margin:15px 15px 16px;width:310px}
+.more .slide-box{height:270px}.more .list-box-l::after{height:270px;bottom:20px}
+.content .content-fs .section-1{display:flex;align-items:center;justify-content:center}
+.content-fs .section-1 img{width:32px;height:32px;border:1px solid #d49b38;border-radius:100%;box-sizing:border-box;margin:0 10px}
+.content-fs .section-1 p{display:flex;align-items:center;font-size:12px;justify-content:left}
+.content-fs .section-1 p .total-data{margin-right:25px}
+.total-data i{color:#ffd882;text-decoration:underline;margin:0 7px}
+.content-fs .rank-score{flex:1;display:flex;flex-direction:row}
+.content-fs .flag-1 .rank-score,.content-fs .flag-2 .rank-score,.content-fs .flag-3 .rank-score{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.current{display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;flex-direction:row;justify-content:center;height:32px;position:-webkit-sticky;position:sticky;top:0;z-index:15;background:#302949;padding:0 6px}
+.content-fs .slide-box .rank-score{justify-content:space-between}
+.content-fs .rank-score{flex:1;display:flex;flex-direction:row;justify-content:space-between}
+.content-fs .slide-box ul{margin-top:10px}.content-fs .rank-score .voting-number{color:#fff}
+.content-fs .flag-1 .voting-number,.content-fs .flag-2 .voting-number,.content-fs .flag-3 .voting-number{color:#ffd98e}
+.earnTicket .content{height:440px}.earnTicket .section-1{margin-bottom:0;font-size:14px;text-align:center;position:relative;border-radius:4px 4px 0 0;color:#fff;background:#2c2545;border-bottom:1px solid #ececec}
+.earnTicket .section-1 a{position:absolute;top:7px;left:10px;font-size:12px;padding:5px;color:#fff}
+.earnTicket .section-1 p{display:block;text-align:center;margin:auto}
+.earnTicket .list .slide-box{width:100%;padding:0 30px;margin:15px 0;overflow-y:scroll;height: 93%;}
+.earnTicket .list{background:#201a36;height:400px;padding:0;border-radius:0 0 4px 4px}
+/* .earnTicket .list .slide-box{height:100%} */
+.earnTicket ul li:nth-child(2n){background:rgba(75,66,106,0.3)}
+.earnTicket .rank-box{padding:0 23px;margin-bottom:0;height:49px}
+.earnTicket .rank-box img{width:36px;height:36px;border:0 solid #d49b38;border-radius:0;margin-right:15px}
+.earnTicket .rank-score .name{display:block;font-weight:bold;font-size:14px;color:#fff;line-height:22px}
+.earnTicket .to-complete{color:#daa23a;background-image:none;border:1px solid #daa23a;box-sizing:border-box;line-height:21px}
+.earnTicket .list .list-box-l::after{content:"";width:0}
+.detail .list{padding:10px 20px}.detail .list .slide-box{width:100%;box-sizing:border-box;padding:0 100px;margin:15px 0}
+.detail .list .slide-box{height:93%}.detail .list .slide-box .not-data{text-align:center;margin-top:150px}
+.detail ul .rank-box{border-bottom:1px solid #0f0927;padding:0;font-size:12px}
+.detail ul li:nth-child(2n){background:0}.detail .rank-score .name{font-size:12px}
+.detail .rank-score .voting-number{color:#777;font-size:10px}
+.detail .rank-box a{color:#ffd98e}.detail .rank-box .ps-addum{color:#4eb0fb}
+.pop{width:328px;height:228px;position:fixed;top:0;right:0;bottom:0;left:0;margin:auto;box-sizing:border-box;color:#ffd98e;text-align:center;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/pop-bg2.png) top center no-repeat;background-size:100% 100%}
+.pop .button-box{display:flex;justify-content:space-around;position:absolute;bottom:15px;left:0;right:0;margin:auto;padding:0 20px}
+.pop .button-box a{display:block;width:118px;height:36px;line-height:36px;text-align:center;border-radius:18px;font-size:14px;color:#e2b65e;border:1px solid #ffe8b9;box-sizing:border-box}
+.pop .button-box .true{background-image:linear-gradient(90deg,#ffe8b9 0,#e2b65e 100%);color:#3a0c0c}
+.no-ticket{line-height:180px}.pop-2{width:328px;height:266px;font-size:14px;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/pop-bg1.png) top center no-repeat;background-size:100% 100%}
+.img-head{width:65px;height:65px;border-radius:50%;margin-top:10px}
+.top-alt{margin-top:30px}.aj-number{display:flex;flex-direction:row;justify-content:center;margin:23px auto 19px}
+.js,.add{display:block;width:26px;height:26px}.js{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/reduce-icon.png) top center no-repeat;background-size:100% 100%}
+.js.disable{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/w-js.png) top center no-repeat;background-size:100% 100%}
+.add{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/add-icon.png) top center no-repeat;background-size:100% 100%}
+.add.disable{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/w-zj.png) top center no-repeat;background-size:100% 100%}
+.aj-number input{width:70px;border:0;outline:0;background:0;font-size:20px;color:#fff;margin:0 5px;text-align:center;border-bottom:1px solid #474061}
+.aj-number input::placeholder{color:#fff}.more-ticket{font-size:12px;color:#95b8f5}
+.more-ticket a{color:#ffd98e;text-decoration:underline}
+.success{width:290px;height:290px;position:fixed;left:0;right:0;top:0;bottom:0;margin:auto;display:flex;justify-content:center;align-items:center;z-index:100}
+.cover{background:rgba(0,0,0,0.7);position:fixed;left:0;right:0;top:0;bottom:0;z-index:99}
+.scroll,.stars{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto}
+.stars a{position:absolute;width:24px;height:24px;display:block;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/star-icon.png) top center no-repeat;background-size:100% 100%}
+.stars a:nth-child(1){top:80px;left:80px;animation:opacity-change 2s ease-in-out infinite;-webkit-animation:opacity-change 2s ease-in-out infinite;-moz-animation:opacity-change 2s ease-in-out infinite;-o-animation:opacity-change 2s ease-in-out infinite}
+.stars a:nth-child(2){top:40px;right:80px;animation:opacity-change 1s ease-in-out infinite;-webkit-animation:opacity-change 1s ease-in-out infinite;-moz-animation:opacity-change 1s ease-in-out infinite;-o-animation:opacity-change 1s ease-in-out infinite}
+.stars a:nth-child(3){top:140px;right:100px;animation:opacity-change 1s 2s ease-in-out infinite;-webkit-animation:opacity-change 1s 2s ease-in-out infinite;-moz-animation:opacity-change 1s 2sease in-out infinite;-o-animation:opacity-change 1s 2s ease-in-out infinite}
+.scroll::before,.scroll::after{content:"";position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;z-index:1}
+.scroll::before{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/light-1.png) top center no-repeat;background-size:100% 100%;-webkit-animation:rotate1 10s infinite linear;animation:rotate1 10s infinite linear}
+.scroll::after{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/light-2.png) top center no-repeat;background-size:100% 100%;-webkit-animation:rotate2 10s infinite linear;animation:rotate2 10s infinite linear}
+.tp{display:flex;justify-content:center;align-items:center;flex-direction:column;position:relative;z-index:10}
+.hand{width:74px;height:108px}.dz{width:119px;height:39px;margin-top:-10px}
+@-webkit-keyframes rotate1{0%{-webkit-transform:rotateZ(0)}
+100%{-webkit-transform:rotateZ(360deg)}}@keyframes rotate1{0%{transform:rotateZ(0)}
+100%{transform:rotateZ(360deg)}}@-webkit-keyframes rotate2{0%{-webkit-transform:rotateZ(0)}
+100%{-webkit-transform:rotateZ(-360deg)}}@keyframes rotate2{0%{transform:rotateZ(0)}
+100%{transform:rotateZ(-360deg)}}@keyframes opacity-change{0%{opacity:0}
+50%{opacity:1}100%{opacity:0}}@-webkit-keyframes opacity-change{0%{opacity:0}
+50%{opacity:1}100%{opacity:0}}@-moz-keyframes opacity-change{0%{opacity:0}
+50%{opacity:1}100%{opacity:0}}@-o-keyframes opacity-change{0%{opacity:0}
+50%{opacity:1}100%{opacity:0}}.white-page .nav-change{background:#fff}
+.white-page .nav-change a{color:#333}.white-page .section-1{background:#fff}
+.white-page .search-icon{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/search-icon2.png) top center no-repeat;background-size:100% 100%}
+.white-page .total-data i{color:#333;text-decoration:none;margin:0 7px}
+.white-page .section-1 input{border-left:1px solid #eaeaea;color:#999}
+.white-page .list{background:#fff}.white-page .rank-score span{color:#333}
+.white-page .list .title{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/bq-write.png) top center no-repeat;background-size:100% 100%}
+.white-page .rank-num{color:#333}.white-page .flag-1 .rank-num{color:#fff}
+.white-page .flag-2 .rank-num{color:#fff}.white-page .flag-3 .rank-num{color:#fff}
+.white-page .content-fs .voting-number{color:#333}
+.white-page .content-zb .voting-number{color:#deaf42}
+.white-page .detail .content-zb .voting-number{color:#333}
+.white-page .content-fs .flag-1 .voting-number{color:#deaf42}
+.white-page .content-fs .flag-3 .voting-number{color:#deaf42}
+.white-page .content-fs .flag-2 .voting-number{color:#deaf42}
+.white-page .list .list-box-l::after{background:#eaeaea}
+.white-page.footer{color:#859fce}.white-page .rules{background:#fff;color:#333}
+.white-page .rules::after{border-color:transparent transparent #fff}
+.white-page .section-1 .search-box{background:#fff;box-shadow:0 6px 5px 0 rgba(19,13,40,0.09);color:#333}
+.white-page .section-1 .search-box ul li{margin-bottom:0}
+.white-page .section-1 .search-box ul li .rank-score{display:flex;flex-direction:column}
+.white-page .section-1 .search-box ul li .tb-btn{margin-right:200px}
+.white-page .section-1 .search-box ul li:hover{background:#fff3e4;color:#deaf42;cursor:pointer}
+.white-page .current{background:#fff0dc}.white-page .earnTicket .section-1{background:#fff;color:#333;line-height:19px}
+.white-page .earnTicket .section-1 a{color:#333}.white-page .earnTicket .list{background:#fff;height:400px;padding:0;border-radius:0 0 4px 4px}
+.white-page .earnTicket .rank-score .name{color:#333}
+.white-page .detail .content ul .rank-box{border-bottom:1px solid #ececec;background-color:#fff}
+.white-page .detail .rank-score .name{font-size:12px}
+.white-page .earnTicket ul li:nth-child(2n){background:#fff3e4}
+.white-page .earnTicket ul li:nth-child(2n){background:#fff3e4}
+.white-page.pop{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/pop-bg4.png) top center no-repeat;background-size:100% 100%}
+.white-page.pop .no-ticket{color:#333}.white-page.pop-2{color:#333;background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/pop-bg3.png) top center no-repeat;background-size:100% 100%}
+.white-page .more-ticket{color:#666}.white-page .more-ticket a{color:#8bb8fa}
+.white-page .aj-number input{color:#000}.white-page .aj-number input::placeholder{color:#000}
+.white-page .footer{color:#ffb39e;display:none}.page_div{display:none}
+.more .page_div{display:block;position:absolute;left:0;right:0;margin:auto;bottom:36px;text-align:center}
+.page_div button{display:inline-block;min-width:20px;height:20px;cursor:pointer;color:#333;font-size:12px;line-height:20px;background-color:#f9f9f9;border:1px solid #dce0e0;text-align:center;margin:0 4px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+#firstPage,#lastPage,#nextPage,#prePage{width:50px;color:#deaf42;border:1px solid #dce0e0}
+#nextPage,#prePage{width:20px;text-indent:-10000px}
+#prePage{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/jt-icon.png) center center no-repeat;background-size:6px 10px}
+#nextPage{background:url(https://game.gtimg.cn/images/user/cp/a20190719HuyaLivePC/jt-icon.png) center center no-repeat;background-size:6px 10px;transform:rotateZ(180deg)}
+.page_div .current{background:#deaf42;border-color:none;color:#fff}
+.totalPages{margin:0 10px}.totalPages span,.totalSize span{color:#0073a9;margin:0 5px}
+.page_div button:disabled{opacity:.5;cursor:no-drop}
